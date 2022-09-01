@@ -37,4 +37,35 @@ body{
     font-size: 24px;
     font-weight: bold;
     border:1px solid #AF004F
-}
+    }
+
+    .footer{
+        margin-top: 15px;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .footer button{
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 20px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+        padding: 5px;
+        width: 80px;
+        background-color: #FFE0EE;
+        color: #4b0303;
+        cursor: pointer;
+    }
+
+    .footer button:hover{
+        background-color: #ffc525;
+    }
+
+    .footer span{
+        flex: 1;
+        text-align: center;
+        font-size: 18px;
+        color: #ffed5b;
+        font-weight: auto 0;
+    }
