@@ -6,13 +6,21 @@
     padding: 0;
 }
 
-html{
-    height: 100%;
-}
 
 body{
-    height: 100%;
-    background-image: linear-gradient(to left top, #8a5f8a, #cc718d, #fc8f7d, #ffbf69, #f9f871);
+    width: 100%;
+    /*background-image: linear-gradient(to right top, #84c1ff, #7fabff, #978eff, #bd66f3, #e213cd);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background { 
+    /*position: absolute;*/
+    /*display: block;*/
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right top, #84c1ff, #978eff, #bd66f3, #e213cd);
 }
 
 h1{
@@ -20,8 +28,9 @@ h1{
     justify-content: center;
     margin-top: 60px;
     font-family: 'Silkscreen', cursive;
-    font-size: 3rem;
-    color: #980a0a;
+    font-size: 2.4rem;
+    color: #ffd9fd;
+    text-shadow: 0.1em 0.1em 0.3em rgb(170, 170, 170);
 }
 
 .game{
@@ -31,7 +40,7 @@ h1{
     transform: translate(-50%, -50%);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     padding: 15px;
-    background-color:#ffc4005c;
+    background-color:#ff00e65c;
     border-radius: 5px;
 }
 
@@ -64,20 +73,20 @@ h1{
         box-shadow: 0 0px 5px #8a5f8a;
         padding: 5px;
         width: 80px;
-        background-color: #f9f971a8;
+        background-color: #b4d9ff;
         color: #980a0a94;
         cursor: pointer;
     }
 
     .footer button:hover{
-        background-color: #ffbf69;
+        background-color: #ffb0eb;
     }
 
     .footer span{
         flex: 1;
         text-align: center;
         font-size: 16px;
-        color: #ffbf69;
+        color: #a1cdff;
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
     }
