@@ -9,28 +9,38 @@
 
 body{
     width: 100%;
-    background-image: linear-gradient(to right top, #84c1ff, #7fabff, #978eff, #bd66f3, #e213cd);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image:linear-gradient(to right top, #978eff, #bd66f3, #e213cd);
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*position: relative;*/
+    /*text-align: center;*/
+    padding: 0 2em;
 }
 
-.background { 
+.background {
     position: absolute;
-    display: block;
-    top: 0;
+    height: 90vh;
+    /*top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;*/
     z-index: -1;
-    background-image: linear-gradient(to right top, #84c1ff, #978eff, #bd66f3, #e213cd);
 }
+
 
 h1{
+    position: absolute;
+    top: 5%;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
     font-family: 'Silkscreen', cursive;
     font-size: 2.4rem;
     color: #ffd9fd;
     text-shadow: 0.1em 0.1em 0.3em rgb(170, 170, 170);
+    z-index: 1;
 }
 
 .game{
@@ -40,7 +50,7 @@ h1{
     transform: translate(-50%, -50%);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     padding: 15px;
-    background-color:#ff00e65c;
+    background-color:#ff00e67b;
     border-radius: 5px;
 }
 
@@ -48,15 +58,15 @@ h1{
     display: grid;
     grid-template-columns: 80px 80px 80px 80px;
     grid-template-rows: 80px 80px 80px 80px;
-    border: 3px solid #AF004F;
+    border: 3px solid #ffb0eb;
 }
 
 .grid button{
-    background-color: #FFE0EE;
-    color: #b30e58;
+    background-color: #46054c;
+    color: #bd66f3;
     font-size: 24px;
     font-weight: bold;
-    border:1px solid #cc718d;
+    border:1px solid #ffb0eb;
     }
 
     .footer{
@@ -73,20 +83,20 @@ h1{
         box-shadow: 0 0px 5px #8a5f8a;
         padding: 5px;
         width: 80px;
-        background-color: #b4d9ff;
-        color: #980a0a94;
+        background-color: #bd66f3;
+        color: #ffb0eb;
         cursor: pointer;
     }
 
     .footer button:hover{
-        background-color: #ffb0eb;
+        background-color: #46054c;
     }
 
     .footer span{
         flex: 1;
         text-align: center;
         font-size: 16px;
-        color: #a1cdff;
+        color: #ffb0eb93;
         font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
     }

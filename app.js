@@ -181,9 +181,9 @@ class Game {
     
       // Render button  
       const newButton = document.createElement("button");  
-      if (status === "ready") newButton.textContent = "Play";  
+      if (status === "ready") newButton.textContent = "Jogar";  
       if (status === "playing") newButton.textContent = "Reset";  
-      if (status === "won") newButton.textContent = "Play";  
+      if (status === "won") newButton.textContent = "Jogar";  
       newButton.addEventListener("click", () => {  
         clearInterval(this.tickId);  
         this.tickId = setInterval(this.tick, 1000);  
@@ -192,14 +192,14 @@ class Game {
       document.querySelector(".footer button").replaceWith(newButton);  
     
       // Render move  
-      document.getElementById("move").textContent = `Move: ${move}`;  
+      document.getElementById("move").textContent = `Movimentos: ${move}`;  
     
       // Render time  
-      document.getElementById("time").textContent = `Time: ${time}`;  
+      document.getElementById("time").textContent = `Tempo: ${time}`;  
     
       // Render message  
       if (status === "won") {  
-        document.querySelector(".message").textContent = "You win!";  
+        document.querySelector(".message").textContent = "Você venceu!";  
       } else {  
         document.querySelector(".message").textContent = "";  
       }  
