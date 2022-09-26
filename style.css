@@ -9,14 +9,14 @@
 
 body{
     width: 100%;
-    /*background-image: linear-gradient(to right top, #84c1ff, #7fabff, #978eff, #bd66f3, #e213cd);
+    background-image: linear-gradient(to right top, #84c1ff, #7fabff, #978eff, #bd66f3, #e213cd);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .background { 
-    /*position: absolute;*/
-    /*display: block;*/
+    position: absolute;
+    display: block;
     top: 0;
     left: 0;
     z-index: -1;
@@ -26,7 +26,7 @@ body{
 h1{
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 40px;
     font-family: 'Silkscreen', cursive;
     font-size: 2.4rem;
     color: #ffd9fd;
